@@ -2239,7 +2239,6 @@ echo "ret=$?, err=$err"
 The inner `{..}` writes to STDERR and exits with error code 123. The STDERR from the inner `{..}` is redirected to STDOUT with `2>&1`. The normal STDOUT is redirected to the newly created File Descriptor '3' with `1>&3 3>&-`. The outter `{..}` redirects File Descriptor '3' back to STDOUT with `3>&1`.
 
 The variable `err` then contains the STDERR of the inner `{..}`.
-```
 
 <!-- CHAPTER END -->
 
