@@ -2175,7 +2175,7 @@ This will run the given command and keep it running, even after the terminal or 
 
 ```sh
 bkr() {
-    (nohup "$@" &>/dev/null &)
+    ("$@" &>/dev/null &)
 }
 
 bkr ./some_script.sh # some_script.sh is now running in the background
